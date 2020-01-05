@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>hhhhh</title>
+	</head>
+	<body>
+		
+	</body>
+	<script type="text/javascript" src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+	<script type="text/javascript">
+		
+		$(function(){
+			$.ajax({
+				url:"http://10.36.136.170:9090/user/getAllUsers",
+ 				//dataType:'jsonp',
+				//jsonp:"cb",
+				success:function(data){
+					console.log(data);
+				}
+			})
+		})
+	
+	   /*
+	   function fetch(res){
+		   console.log('res',res)
+	   }
+	   */
+	  
+	  console.log('make it')
+	  
+	  
+	</script>
+	<!-- <script type="text/javascript" src="http://10.36.136.170:9999/user/getAllUsers?callback=fetch">
+	</script> -->
+</html>
